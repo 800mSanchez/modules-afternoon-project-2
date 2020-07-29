@@ -1,38 +1,62 @@
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+  background-position: top;
+  
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a:hover {
+  color: #fed136;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+span {
+ font-size: 18px;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main-header {
+  height: 125px;
   color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.main-header img {
+  height: 75px;
+  width: 205px;
+  padding-right: 100px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.desktop-menu {
+  width: 800px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dropdown {
+  display: none
+}
+ 
+.mobile-menu {
+  display: none
+}
+
+@media (max-width: 990px){
+  .desktop-menu {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .dropdown {
+    display: initial;
+    font-size: 25px;
+    cursor: pointer;
   }
 }
