@@ -59,4 +59,16 @@ span {
     font-size: 25px;
     cursor: pointer;
   }
+
+  .mobile-menu {
+    display: initial;
+    position: fixed;
+    top: 125px;
+    right: 0px;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
